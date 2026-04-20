@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday ❤️</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        /* 🔥 Dark overlay for readability */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.35); /* adjust 0.3 - 0.5 if needed */
+            z-index: 0;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 2s ease-in-out;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+
+        p {
+            font-size: 1.3em;
+            margin: 20px 0;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            background-color: #222; /* darker button */
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff6f91;
+        }
+
+        .hidden {
+            display: none;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Happy Birthday My be love Girlfriend 🎂❤️</h1>
+    <p>
+        Today is your special day, and I want to take a moment to tell you how much you mean to me. 
+        The most beautiful person in my life 💕
+    </p>
+
+    <button onclick="showMessage()">Open Your Surprise 🎁</button>
+
+    <!-- 🎵 Music -->
+    <audio id="bgMusic" loop>
+        <source src="Old Love - Yuji _ Putri Dahlia (Official Lyrics Video).mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="message" class="hidden">
+        <p>
+            I’m so lucky to have you in my life.  
+            You make my days brighter and my heart happier 💖  
+            I hope this year brings you everything you deserve and archive what you want in life. 
+            I will always stand on your side and support you and wish our realationship will always be strong and healthy 🙏. 
+        </p>
+        <p><b>I love you my belove Girlfriend ❤️</b></p>
+    </div>
+</div>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").style.display = "block";
+
+        const music = document.getElementById("bgMusic");
+        music.play();
+    }
+</script>
+
+
+</body>
+</html>
